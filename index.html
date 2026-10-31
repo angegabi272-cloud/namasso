@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NAMAASSO, association loi 1901 à Coulaines, accompagne les jeunes de 16 à 30 ans : mobilité, numérique, français, démarches et emploi. Adhésion 30 €, tarif solidaire possible.">
+    <title>NAMAASSO Nouvel Accompagnement vers la Mobilité et l'Autonomie - Coulaines</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ PRÉLOADER ============ -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo" aria-hidden="true">
+                <span>N</span><span>A</span><span>M</span><span>A</span><span>A</span><span>S</span><span>S</span><span>O</span>
+            </div>
+            <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+            <p class="preloader-text">Chargement</p>
+        </div>
+    </div>
+
+    <!-- ============ BLOBS MORPHOSE ============ -->
+    <div class="morph-bg" aria-hidden="true">
+        <svg class="morph-svg" viewBox="0 0 800 800" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="gradBlob1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff7a00" stop-opacity="0.5"/>
+                    <stop offset="100%" stop-color="#ff2e7a" stop-opacity="0.2"/>
+                </linearGradient>
+                <linearGradient id="gradBlob2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#0e4a8a" stop-opacity="0.4"/>
+                    <stop offset="100%" stop-color="#5e2b97" stop-opacity="0.2"/>
+                </linearGradient>
+                <linearGradient id="gradBlob3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ffba00" stop-opacity="0.35"/>
+                    <stop offset="100%" stop-color="#ff7a00" stop-opacity="0.15"/>
+                </linearGradient>
+            </defs>
+            <path class="blob blob-1" fill="url(#gradBlob1)"/>
+            <path class="blob blob-2" fill="url(#gradBlob2)"/>
+            <path class="blob blob-3" fill="url(#gradBlob3)"/>
+        </svg>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ============ WHATSAPP FLOTTANT ============ -->
+    <a href="https://wa.me/33695436834?text=Bonjour%20NAMAASSO%2C%20je%20souhaite%20avoir%20des%20informations."
+       class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter via WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.52 3.48A11.87 11.87 0 0 0 12.05 0C5.5 0 .2 5.3.2 11.85c0 2.09.55 4.13 1.6 5.93L0 24l6.4-1.68a11.83 11.83 0 0 0 5.65 1.44h.01c6.55 0 11.85-5.3 11.85-11.85 0-3.17-1.23-6.15-3.39-8.43zM12.06 21.5a9.6 9.6 0 0 1-4.9-1.34l-.35-.21-3.8 1 .99-3.7-.23-.38a9.55 9.55 0 0 1-1.47-5.1c0-5.28 4.3-9.58 9.6-9.58 2.56 0 4.97 1 6.78 2.81a9.53 9.53 0 0 1 2.81 6.78c0 5.28-4.3 9.58-9.6 9.58zm5.5-7.18c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.18.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.64-.93-2.24-.24-.59-.49-.51-.68-.52h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.78-.73 2.03-1.43.25-.7.25-1.31.18-1.43-.07-.12-.27-.2-.57-.35z"/>
+        </svg>
+        <span class="whatsapp-label">WhatsApp</span>
+    </a>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-container" data-aos="zoom-in">
+                <div class="logo-wrapper">
+                    <img src="images/logo.png" alt="Logo NAMAASSO" class="logo">
+                    <div class="logo-ring"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1 class="multicolor-logo" aria-label="NAMAASSO">
+                    <span>N</span><span>A</span><span>M</span><span>A</span><span>A</span><span>S</span><span>S</span><span>O</span>
+                </h1>
+                <p class="slogan split-text">Nouvel Accompagnement vers la Mobilité et l'Autonomie</p>
+                <p class="slogan-line">Construire son autonomie, ouvrir son avenir ♡</p>
+                <div class="contact-info-header">
+                    <span class="info-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <b>2 Résidence, 1 impasse de la Belle Croix – 72190 COULAINES</b>
+                    </span>
+                    <span class="info-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        06 95 43 68 34
+                    </span>
+                </div>
+                <div class="header-actions">
+                    <a class="btn btn-primary" href="tel:+33695436834">Appeler</a>
+                    <a class="btn btn-whatsapp" href="https://wa.me/33695436834" target="_blank" rel="noopener">WhatsApp</a>
+                    <a class="btn btn-outline" href="#adherer">Adhérer</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+            <div class="container">
+                <a href="#qui" class="nav-link">Qui sommes-nous</a>
+                <a href="#ateliers" class="nav-link">Nos ateliers</a>
+                <a href="#pourqui" class="nav-link">Pour qui</a>
+                <a href="#organisation" class="nav-link">Organisation</a>
+                <a href="#adherer" class="nav-link">Adhérer</a>
+                <a href="#partenariats" class="nav-link">Partenaires</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#localisation" class="nav-link">Localisation</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ============ QUI SOMMES-NOUS ============ -->
+        <section id="qui" class="card morph-card" data-aos="fade-up">
+            <div class="card-glow"></div>
+            <span class="section-index">01</span>
+            <h2 class="reveal-title">Qui sommes-nous ?</h2>
+            <p class="fade-paragraph"><b>NAMAASSO</b> est une association loi 1901 basée à Coulaines (Le Mans Métropole). Elle accompagne les jeunes adultes de 16 à 30 ans vers l'autonomie, l'insertion sociale et professionnelle.</p>
+            <ul class="pro-list">
+                <li>Accompagnement individuel et en petit groupe</li>
+                <li>Adhésion annuelle de 30 € (tarif solidaire ou exonération possible sur demande)</li>
+                <li>Sur rendez-vous à Coulaines</li>
+                <li>Ouvert à tous les jeunes, y compris primo-arrivants et personnes qui parlent peu français</li>
+                <li>Une équipe de 3 bénévoles, sans salarié</li>
+            </ul>
+            <p class="fade-paragraph"><em>Association déclarée en préfecture le 27/09/2026 (récépissé du 01/10/2026). SIRET 131 018 152 00010 – RNA W723018872.</em></p>
+        </section>
+
+        <!-- ============ ATELIERS (8) ============ -->
+        <section id="ateliers" class="card morph-card" data-aos="fade-up">
+            <div class="card-glow"></div>
+            <span class="section-index">02</span>
+            <h2 class="reveal-title">Nos 8 ateliers CAP</h2>
+            <div class="assoc-info">
+                <p class="fade-paragraph">Chaque jeune choisit <b>jusqu'à 3 ateliers à la fois</b>, après un entretien d'accueil. <b>Séances de 2 h</b>, en petit groupe. Premiers ateliers en <b>novembre 2026</b> (places limitées). Une attestation de participation est remise à la fin de chaque atelier.</p>
+            </div>
+
+            <div class="grid4">
+                <!-- Atelier 1 -->
+                <article class="atelier tilt-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="atelier-body">
+                        <span class="atelier-tag atelier-tag-static">Atelier 1</span>
+                        <h3>Accès aux droits et démarches</h3>
+                        <p class="atelier-objective"><b>Objectif </b> comprendre ses courriers, ouvrir ses comptes (CAF, ameli, France Travail) et faire ses démarches avec de moins en moins d'aide.</p>
+                        <p><em>Ouvert en novembre</em></p>
+                    </div>
+                </article>
+
+                <!-- Atelier 2 -->
+                <article class="atelier tilt-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="atelier-body">
+                        <span class="atelier-tag atelier-tag-static">Atelier 2</span>
+                        <h3>Numérique</h3>
+                        <p class="atelier-objective"><b>Objectif </b> créer son adresse e-mail, utiliser FranceConnect, faire une démarche en ligne et éviter les arnaques.</p>
+                        <p><em>Ouvert en novembre</em></p>
+                    </div>
+                </article>
+
+                <!-- Atelier 3 -->
+                <article class="atelier tilt-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="atelier-body">
+                        <span class="atelier-tag atelier-tag-static">Atelier 3</span>
+                        <h3>Mobilité</h3>
+                        <p class="atelier-objective"><b>Objectif </b> lire un plan de bus, utiliser une application, calculer son budget et faire un trajet seul.</p>
+                        <p><em>Ouverture selon les besoins</em></p>
+                    </div>
+                </article>
+
+                <!-- Atelier 4 -->
+                <article class="atelier tilt-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="atelier-body">
+                        <span class="atelier-tag atelier-tag-static">Atelier 4</span>
+                        <h3>Logement</h3>
+                        <p class="atelier-objective"><b>Objectif </b> comprendre les types de logement, préparer un dossier, lire un bail.</p>
+                        <p><em>Ouverture selon les besoins</em></p>
+                    </div>
+                </article>
+
+                <!-- Atelier 5 -->
+                <article class="atelier tilt-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="atelier-body">
+                        <span class="atelier-tag atelier-tag-static">Atelier 5</span>
+                        <h3>Français du quotidien et du travail</h3>
+                        <p class="atelier-objective"><b>Objectif </b> parler, lire et écrire dans la vie de tous les jours et au travail.</p>
+                        <p><em>Ouvert en novembre</em></p>
+                    </div>
+                </article>
+
+                <!-- Atelier 6 -->
+                <article class="atelier tilt-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="atelier-body">
+                        <span class="atelier-tag atelier-tag-static">Atelier 6</span>
+                        <h3>Orientation, formation et métiers</h3>
+                        <p class="atelier-objective"><b>Objectif </b> découvrir les métiers qui recrutent en Sarthe, choisir une formation, écrire son projet.</p>
+                        <p><em>Ouverture selon les besoins</em></p>
+                    </div>
+                </article>
+
+                <!-- Atelier 7 -->
+                <article class="atelier tilt-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="atelier-body">
+                        <span class="atelier-tag atelier-tag-static">Atelier 7</span>
+                        <h3>Emploi : CV, entretien, maintien</h3>
+                        <p class="atelier-objective"><b>Objectif </b> faire son CV, préparer un entretien, connaître ses droits de salarié.</p>
+                        <p><em>Ouverture selon les besoins</em></p>
+                    </div>
+                </article>
+
+                <!-- Atelier 8 -->
+                <article class="atelier tilt-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="atelier-body">
+                        <span class="atelier-tag atelier-tag-static">Atelier 8</span>
+                        <h3>Citoyenneté et lutte contre l'isolement</h3>
+                        <p class="atelier-objective"><b>Objectif </b> prendre confiance, rencontrer d'autres jeunes, participer à la vie locale.</p>
+                        <p><em>Ouverture selon les besoins</em></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ POUR QUI ============ -->
+        <section id="pourqui" class="card morph-card" data-aos="fade-up">
+            <div class="card-glow"></div>
+            <span class="section-index">03</span>
+            <h2 class="reveal-title">Pour qui ?</h2>
+            <p class="fade-paragraph">Nos accompagnements s'adressent aux jeunes de 16 à 30 ans, y compris primo-arrivants et personnes qui parlent peu français, souhaitant gagner en autonomie au quotidien.</p>
+        </section>
+
+        <!-- ============ ORGANISATION ============ -->
+        <section id="organisation" class="card morph-card" data-aos="fade-up">
+            <div class="card-glow"></div>
+            <span class="section-index">04</span>
+            <h2 class="reveal-title">Notre organisation</h2>
+
+            <div class="assoc-info">
+                <p class="fade-paragraph"><b>Une équipe de 3 bénévoles :</b></p>
+                <p class="fade-paragraph">• <b>Présidence :</b> direction, coordination et lien avec les partenaires.</p>
+                <p class="fade-paragraph">• <b>Trésorerie :</b> gestion financière et suivi du budget.</p>
+                <p class="fade-paragraph">• <b>Secrétariat :</b> comptes rendus et suivi administratif.</p>
+            </div>
+
+            <p class="fade-paragraph"><b>Lancement des ateliers :</b> novembre 2026. <b>Objectif de la première année :</b> accompagner 10 jeunes de 16 à 30 ans. Bilan prévu en juin 2027.</p>
+        </section>
+
+        <!-- ============ ADHÉRER ============ -->
+        <section id="adherer" class="card morph-card" data-aos="fade-up">
+            <div class="card-glow"></div>
+            <span class="section-index">05</span>
+            <h2 class="reveal-title">Adhérer à NAMAASSO</h2>
+            <p class="fade-paragraph">L'adhésion annuelle est de <b>30 €</b> (article 7 des statuts). Un tarif solidaire ou une exonération est possible pour les personnes en situation de précarité : demandez-le lors de votre inscription.</p>
+
+            <div class="qrwrap">
+                <div class="qr-block">
+                    <img src="images/qr-code.jpeg" alt="QR Code NAMAASSO - Adhésion" class="qr-pulse">
+                </div>
+                <div class="qr-text">
+                    <h3>Devenir membre</h3>
+                    <p>Scannez ce QR code pour accéder au formulaire d'adhésion, ou contactez-nous pour demander le tarif solidaire.</p>
+                    <a class="btn btn-whatsapp" href="https://wa.me/33695436834?text=Bonjour%20NAMAASSO%2C%20je%20souhaite%20adh%C3%A9rer%20%C3%A0%20l%27association." target="_blank" rel="noopener">Demander une adhésion WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PARTENAIRES ============ -->
+        <section id="partenariats" class="card morph-card" data-aos="fade-up">
+            <div class="card-glow"></div>
+            <span class="section-index">06</span>
+            <h2 class="reveal-title">Partenaires : Vous accompagnez des jeunes ? Orientez-les vers nous.</h2>
+
+            <div class="assoc-info">
+                <p class="fade-paragraph">Mission Locale, CCAS, centres sociaux, organismes de formation, associations : vous rencontrez des jeunes de 16 à 30 ans qui ont besoin d'aide pour la mobilité, le numérique, le français, les démarches ou l'emploi ? Orientez-les vers NAMAASSO, avec leur accord.</p>
+                <ul class="pro-list">
+                    <li>Remplissez la fiche d'orientation avec le jeune et faites-la signer.</li>
+                    <li>Envoyez-la à <a href="mailto:namaasso93@gmail.com">namaasso93@gmail.com</a> ou appelez le 06 95 43 68 34.</li>
+                    <li>Nous contactons le jeune dans les meilleurs délais et vous informons de son parcours, avec son accord.</li>
+                </ul>
+                <p class="fade-paragraph" style="margin-top: 1rem;"><b>Une convention de partenariat est possible.</b></p>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+                    <!-- Remplacez les liens par vos PDF si besoin, ici on met des liens fictifs fonctionnels -->
+                    <a href="docs/Convention-Partenariat-Orientation.pdf" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank" rel="noopener" download>Télécharger la convention</a>
+                    <a href="docs/Fiche-Orientation-Annexe (1).pdf" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank" rel="noopener" download>Télécharger la fiche d'orientation</a>
+                </div>
+            </div>
+
+            <div class="partenariat-contact">
+                <h3>Contact partenariats</h3>
+                <p><b>Nathalie TOUCHARD</b> — Présidente</p>
+                <p>Téléphone : <a href="tel:+33695436834">06 95 43 68 34</a></p>
+                <p>Email : <a href="mailto:namaasso93@gmail.com">namaasso93@gmail.com</a></p>
+            </div>
+
+            <p class="team-note" style="margin-top:1.5rem;">
+                <em>Aucun logo ou nom de partenaire n'est affiché sans accord écrit.</em>
+            </p>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="card morph-card" data-aos="fade-up">
+            <div class="card-glow"></div>
+            <span class="section-index">07</span>
+            <h2 class="reveal-title">Nous contacter</h2>
+
+            <div class="assoc-info">
+                <p class="fade-paragraph"><b>Nathalie TOUCHARD Présidente</b></p>
+                <p class="fade-paragraph"><b>Tél :</b> <a href="tel:+33695436834">06 95 43 68 34</a></p>
+                <p class="fade-paragraph"><b>Email :</b> <a href="mailto:namaasso93@gmail.com">namaasso93@gmail.com</a></p>
+                <p class="fade-paragraph"><b>Adresse :</b> 2 Résidence, 1 impasse de la Belle Croix, 72190 Coulaines (sur rendez-vous).</p>
+            </div>
+
+            <div class="contact-channels">
+                <a href="https://wa.me/33695436834?text=Bonjour%20NAMAASSO%2C%20je%20souhaite%20avoir%20des%20informations."
+                   class="channel-card channel-whatsapp" target="_blank" rel="noopener" data-aos="fade-up">
+                    <span class="channel-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.38 8.38 0 0 1-4-1L3 20l1-5a8.5 8.5 0 1 1 17-3.5z"/><path d="M9 10c.5 2 2 3.5 4 4l1-1.5c.3-.4 1.5.3 2 0l1-.5"/></svg>
+                    </span>
+                    <h3>WhatsApp</h3>
+                    <p>Discussion directe et rapide</p>
+                </a>
+                <a href="mailto:namaasso93@gmail.com?subject=Demande%20d'information%20-%20NAMAASSO"
+                   class="channel-card channel-email" data-aos="fade-up" data-aos-delay="100">
+                    <span class="channel-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                    </span>
+                    <h3>Email</h3>
+                    <p>namaasso93@gmail.com</p>
+                </a>
+                <a href="tel:+33695436834" class="channel-card channel-phone" data-aos="fade-up" data-aos-delay="200">
+                    <span class="channel-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </span>
+                    <h3>Téléphone</h3>
+                    <p>06 95 43 68 34</p>
+                </a>
+            </div>
+
+            <form id="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+                <p style="font-size: 0.8rem; color: var(--texte-secondaire); margin-top: 10px; text-align: center;">
+                    Les informations saisies servent uniquement à répondre à votre demande. En savoir plus : mentions légales et RGPD ci-dessous.
+                </p>
+            </form>
+        </section>
+
+        <!-- ============ LOCALISATION ============ -->
+        <section id="localisation" class="card morph-card" data-aos="fade-up">
+            <div class="card-glow"></div>
+            <span class="section-index">08</span>
+            <h2 class="reveal-title">Nous localiser</h2>
+            <p class="fade-paragraph">Permanences sur rendez-vous à Coulaines. Le lieu exact vous est communiqué lors de la prise de rendez-vous.</p>
+            
+            <div class="assoc-info" style="text-align: center;">
+                <p class="fade-paragraph" style="font-size: 1.1rem; margin-bottom: 1rem;"><b>📍 2 Résidence, 1 impasse de la Belle Croix, 72190 COULAINES</b></p>
+                <a class="btn btn-primary" href="tel:+33695436834">Nous appeler pour un RDV</a>
+            </div>
+        </section>
+
+        <!-- ============ MENTIONS LÉGALES ============ -->
+        <section id="mentions" class="legal" data-aos="fade-up">
+            <h3>Mentions légales & RGPD</h3>
+
+            <h4>Éditeur du site</h4>
+            <p>
+                <b>NAMAASSO NOUVEL ACCOMPAGNEMENT VERS LA MOBILITE ET L'AUTONOMIE</b><br>
+                Siège : 2 Résidence, 1 impasse de la Belle Croix, 72190 COULAINES<br>
+                Association déclarée en préfecture de la Sarthe le 27/09/2026 (récépissé du 01/10/2026). Active depuis le 27/09/2026 (avis INSEE du 06/10/2026).<br>
+                SIRET : 131 018 152 00010<br>
+                SIREN : 131 018 152<br>
+                RNA : W723018872<br>
+                APE : 88.99B Action sociale sans hébergement n.c.a.<br>
+                ESS : Oui Catégorie 9220<br>
+                3 dirigeants bénévoles 0 salarié
+            </p>
+
+            <h4>Directrice de publication</h4>
+            <p>
+                Nathalie TOUCHARD  Présidente<br>
+                Contact : <a href="tel:+33695436834">06 95 43 68 34</a> / <a href="mailto:namaasso93@gmail.com">namaasso93@gmail.com</a>
+            </p>
+
+            <h4>Hébergeur du site</h4>
+            <p>GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, États-Unis. Site publié avec GitHub Pages (github.com).</p>
+
+            <h4>Données personnelles (RGPD)</h4>
+            <p>
+                Responsable du traitement : association NAMAASSO, 2 Résidence, 1 impasse de la Belle Croix, 72190 Coulaines · namaasso93@gmail.com · 06 95 43 68 34.<br>
+                Données collectées : nom, adresse e-mail et message saisis dans le formulaire de contact ; nom et coordonnées nécessaires à l'adhésion via <strong>Google Forms (Google LLC)</strong>.<br>
+                Pourquoi : répondre à votre demande, gérer votre adhésion et organiser votre accompagnement. Ces données sont utilisées par les seuls membres du bureau de l'association.<br>
+                Base légale : votre consentement, donné en envoyant le formulaire, et l'intérêt légitime de l'association à répondre aux demandes.<br>
+                Destinataires techniques : GitHub (hébergement du site), <strong>Google Forms (Google LLC)</strong> et WhatsApp (Meta) si vous nous écrivez par ce canal. Ces services peuvent traiter des données aux États-Unis, avec les garanties prévues par leurs politiques.<br>
+                Durée de conservation : 2 ans maximum après votre dernier contact, sauf pour les adhérents : durée de l'adhésion puis <strong>3 ans après la fin de l'adhésion</strong>.<br>
+                Vos droits : accès, rectification, effacement, limitation, opposition. Écrivez à namaasso93@gmail.com. Vous pouvez aussi saisir la CNIL (cnil.fr). Nous ne revendons aucune donnée.<br>Pour les jeunes de 16 et 17 ans, l'accompagnement se fait avec l'accord du représentant légal.<br>
+                Cookies : le site n'utilise pas de cookies de suivi. Seuls les cookies techniques de GitHub Pages sont utilisés.
+            </p>
+
+            <p style="margin-top:1rem;"><em>Dernière mise à jour : octobre 2026</em></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <p class="footer-brand">NAMAASSO</p>
+                <p>Association loi 1901  Coulaines (72190)</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-label">Contact</p>
+                <p>06 95 43 68 34</p>
+                <p>namaasso93@gmail.com</p>
+                <p>2 Résidence, 1 impasse de la Belle Croix, 72190 Coulaines</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-label">Navigation</p>
+                <a href="#qui">Qui sommes-nous</a>
+                <a href="#ateliers">Nos ateliers</a>
+                <a href="#organisation">Organisation</a>
+                <a href="#adherer">Adhérer</a>
+                <a href="#partenariats">Partenaires</a>
+                <a href="#contact">Contact</a>
+                <a href="#mentions">Mentions légales</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NAMAASSO  Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
